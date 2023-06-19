@@ -59,6 +59,9 @@ a {
   padding: 0 63px 0 150px;
   overflow: hidden;
 }
+.header__logo {
+  margin-bottom: 5px;
+}
 .header__block_logo {
   position: relative;
   display: flex;
@@ -66,24 +69,16 @@ a {
   align-items: flex-end;
   margin-right: auto;
 }
-.header__logo {
-  display: flex;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.04em;
-  color: #A6A6A6;
+.logo {
+  height: 16px;
   cursor: pointer;
   text-decoration: none;
 }
-.header__logo span {
-  display: inline-block;
-  margin-left: 1px;
-  margin-top: 1px;
-  color: #00A2B8;
-  font-weight: bold;
+.logo span {
+  display: inline-flex;
   transition: all 0.8s ease;
 }
-.header__logo:hover span {
+.logo:hover span {
   transition: all 0.8s ease;
   -moz-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
@@ -92,9 +87,9 @@ a {
   transform: rotateX(360deg);
 }
 .header.animated .header__logo span {
-  animation: rotateUXheader 1.5s ease;
+  animation: rotateUX 1.5s ease;
 }
-@keyframes rotateUXheader {
+@keyframes rotateUX {
   0% {
     -moz-transform: rotateX(540deg);
     -ms-transform: rotateX(540deg);
@@ -323,6 +318,9 @@ a {
 }
 .header.scrolled .header__container {
   align-items: center;
+}
+.header.scrolled .header__logo {
+  margin-bottom: 0;
 }
 .header.scrolled .header__btn_ep {
   color: #fff;
