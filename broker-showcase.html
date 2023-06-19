@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#f9f9f9">
+		<meta name="description" content="BrokerEngine">
+
+		<link rel="icon" href="favicon.ico" type="img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/showcases.css">
+		<link rel="stylesheet" href="css/broker.css">
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-M9BMCH3');</script>
+		<!-- End Google Tag Manager -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedFooter").load("footer.html"); 
+			});
+		</script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+		<script src="js/events.js"></script>
+		
+		<title>BrokerEngine</title>
+	</head>
+	<body class="showcase broker__page">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M9BMCH3"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<header class="header animated">
+			<div class="header__container">
+				<div class="header__block header__block_logo">
+					<a class="header__logo animated" href="./">
+						Leverage
+						<span>
+							<svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.07903 0.400024H10.941V8.50002C10.941 10.084 10.509 11.26 9.64503 12.028C8.78103 12.796 7.55703 13.18 5.97303 13.18C4.20903 13.18 2.88303 12.802 1.99503 12.046C1.11903 11.29 0.68103 10.108 0.68103 8.50002V0.400024H3.88503V8.68003C3.88503 9.42403 4.06503 9.96402 4.42503 10.3C4.78503 10.636 5.33703 10.804 6.08103 10.804C6.81303 10.804 7.32903 10.642 7.62903 10.318C7.92903 9.99402 8.07903 9.44803 8.07903 8.68003V0.400024ZM16.8008 0.400024L19.1408 5.08002L21.4988 0.400024H25.045L21.4268 6.52002L25.045 13H21.1028L19.1408 7.61802L16.4048 13H12.8768L16.6748 6.52002L12.8768 0.400024H16.8008Z" fill="#FFD43D"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9261 0.300049H8.05962V6.42962H10.9261V0.300049ZM3.85902 6.42962V0.300049H0.650024V6.42962H3.85902Z" fill="#44BCFF"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1387 4.98737L16.7951 0.300049H12.8649L16.6689 6.42962H21.4283L25.052 0.300049H21.5004L19.1387 4.98737Z" fill="#44BCFF"/>
+							</svg>
+						</span>
+					</a>
+					<div id="btn_om" class="header__btn_om">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+				<div class="header__block header__block_menu">
+	    		<nav id="menu" class="header__menu">
+	    			<div class="menu__btn_back">
+	    				<svg class="btn__back" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+						</svg>
+	    			</div>
+	  				<div class="header__menu_link active">
+	    				<img class="menu__link_img" src="./img/port.svg" alt="portfolio">
+	    				<a href="./portfolio.html">Portfolio</a>
+	    				<div class="link__line active"></div>
+	    			</div>
+	    			<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/des.svg" alt="design">
+	    				<a href="./design-process.html">Design Process</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/pric.svg" alt="pricing">
+	    				<a href="./pricing.html">Pricing</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/about.svg" alt="about">
+	    				<a href="./about.html">About Us</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_line"></div>
+	    		</nav>
+				</div>
+				<a id="btn_ep" href="https://calendly.com/leverageux/intro" class="btn header__btn_ep" target=_blank>Get in touch</a>
+	  		<div class="menu__back"></div>
+  		</div>
+		</header>
+		
+		<main class="content">
+			<section class="content__section section__hero">
+				<div class="hero__info">
+					<h1 class="hero__title"><img src="./img/showcases/broker/logo.png" alt="BrokerEngine"></h1>
+					<p class="hero__descr">How we helped BrokerEngine <br>to create new effective tools <br>for BrokerEngine Web Application</p>
+				</div>
+				<div class="hero__lines"></div>
+			</section>
+
+			<section class="content__section section__summary">
+				<div class="showcase__title">
+					<img src="./img/showcases/insight/summary.svg" alt="summary">
+					<h2>Summary</h2>
+				</div>
+				<div class="summary__container">
+					<div class="summary__block summary__block-info">
+						<h4>Scope</h4>
+						<p>UI/UX Design, Web App Design, <br>Responsive Design, FinTech Design</p>
+						<h4>Timeline</h4>
+						<p>2+ months</p>
+						<h4>Budget</h4>
+						<p>$10k+</p>
+						<h4>Interested?</h4>
+						<a href="https://calendly.com/leverageux/intro" target=_blank id="link_calend_broker">Discuss Project</a>
+					</div>
+					<div class="summary__block summary__block-descr">
+						<img src="./img/showcases/broker/sum_descr.svg" alt="icon">
+						<p><b>BrokerEngine</b> is the first and only <br>mortgage broker software guaranteed to <br>grow your revenue while working fewer <br>hours, with push-button automation and <br>workflows that free you up to focus on <br>your highest-value activities.<br>
+						<br>Our team has worked on 3 projects:<br></p>
+						<p><b>1.</b> BrokerVision - broker-client <br>collaboration tool<br></p>
+						<p><b>2.</b> Presentation Builder<br></p>
+						<p><b>3.</b> BrokerWizard - tool for no-hassle <br>work with deal data</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content__section section__comment">
+				<img src="./img/showcases/mark_1.svg" alt="mark_1">
+				<div class="comment">
+					Automating the automatable, so you can free up the broker and team for higher-value <br>client-facing activity
+				</div>
+				<img src="./img/showcases/mark_2.svg" alt="mark_2">
+				<div class="comment__lines"></div>
+			</section>
+
+			<section class="content__section section__goals">
+				<img src="./img/showcases/insight/goals.svg" alt="goals">
+				<div class="goals__container">
+					<div class="goals__block goals__block-project">
+						<h3>Project goals</h3>
+						<p class="goal goal_1">Upgrade overall product style, look and feel, <br>as our client said: “to make it sexy”</p>
+						<p class="goal goal_2">Design An effective collaboration tool that helps <br>customers and brokers in a quick and easy way <br>to communicate and collect all the data <br>that is needed for getting a mortgage</p>
+						<p class="goal goal_3">Create a tool for easy presentation creation <br>for brokers</p>
+						<p class="goal goal_4">Simplify the user experience <br>for the BrokerWizard tool</p>
+					</div>
+					<div class="goals__block goals__block-business">
+						<h3>Business Goals</h3>
+						<p class="goal goal_1">Present new tools to the market to get <br>new customers and retain the old one</p>
+						<p class="goal goal_2">To convince new customers by demonstrating <br>easy-to-use new products</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content__section section__challenges">
+				<div class="showcase__title showcase__title-line">
+					<img src="./img/showcases/insight/challenges.svg" alt="challenges">
+					<h2>Project Challenges</h2>
+					<div class="title__line"></div>
+				</div>
+				<div class="challenges__container">
+					<img class="rocket" src="./img/showcases/broker/rocket.svg" alt="rocket">
+					<p class="challenge challenge__right challenge_1">Update design style based on <br>the initial requirements and <br>industry standards</p>
+					<p class="challenge challenge__left challenge_2">Help brokers and customers collect <br>and keep all the needed details and <br>data in one place so As not to lose <br>smth during the communication</p>
+					<p class="challenge challenge__right challenge_3">Rethink the presentation <br>creation approach specifically <br>for Brokers</p>
+					<p class="challenge challenge__left challenge_4">Decide on how to simplify the user <br>experience for a Wizard tool</p>
+				</div>
+			</section>
+
+			<section class="content__section section__approach">
+				<div class="showcase__title">
+					<img src="./img/showcases/insight/approach.svg" alt="approach">
+					<h2>Our Approach</h2>
+					<div class="title__line-approach"></div>
+					<p class="approach__descr">Together with our customer we’ve used a mix of lean <br>and data-driven approaches.</p>
+				</div>
+				<div class="approach__container">
+					<div class="approach__steps">	
+						<img class="steps__img" src="./img/showcases/broker/steps.svg" alt="steps">
+						<div class="approach__steps_descr">
+							<div class="approach__steps_block step_1">
+								<div class="step__block">
+									<h3 class="step__title"><span class="step__number">1. </span>Discovery &amp; Strategy</h3>
+									<p class="step_descr">Understand the business, customers, <br>product, and market. <br>Business and project requirements review, <br>Plan to go, Product Audit.</p>
+								</div>
+							</div>
+							<div class="approach__steps_block step_2">
+								<div class="step__block">
+									<h3 class="step__title"><span class="step__number">2. </span>Product definition</h3>
+									<p class="step_descr">Define the product: revisited and created User Flow, <br>Information Architecture and features.</p>
+									<div class="step_tegs">
+										<span class="teg purple">Discuss</span>
+										<span class="teg yellow">Define</span>
+										<span class="teg pink">Design</span>
+										<span class="teg green">Check</span>
+									</div>
+								</div>
+							</div>
+							<div class="approach__steps_block step_3">
+								<div class="step__block">
+									<h3 class="step__title"><span class="step__number">3. </span>Visual design</h3>
+									<p class="step_descr">Brand visual identity, high fidelity mockups, <br>specs, and metrics.</p>
+									<div class="step_tegs">
+										<span class="teg purple">Discuss</span>
+										<span class="teg yellow">Define</span>
+										<span class="teg pink">Design</span>
+										<span class="teg green">Check</span>
+									</div>
+								</div>
+							</div>
+							<div class="approach__steps_block step_4">
+								<div class="step__block">
+									<h3 class="step__title"><span class="step__number">4. </span>Deliverables</h3>
+									<p class="step_descr">Delivering development assets, <br>graphics, icons, etc.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			
+			<div class="showcase__title">
+				<img src="./img/showcases/solutions.svg" alt="solutions">
+				<h2>Our solutions</h2>
+			</div>
+			<section class="content__section section__board section__board-right section__updated">
+				<div class="section__container section__container_img"></div>
+				<div class="section__container section__container_text">
+					<h3 class="section__title">Updated Overall <br>Look and Feel</h3>
+					<p class="section__description">LeverageUX team has updated old-fashioned style 
+						<br>to elegant & minimalistic design with right 
+						<br>priorities and accents using the basic 
+						<br>style requirements and our creativeness.
+						</p>				
+				</div>
+				<div class="img__block img__lines"></div>
+			</section>
+
+			<section class="content__section section__board section__board-left section__visual">
+				<div class="section__container section__container_img"></div>
+				<div class="section__container section__container_text">
+					<h3 class="section__title">Revisited the broker-client <br>collaboration approach</h3>
+					<p class="section__description">We have revisited the process of collaboration <br>between broker and client, made it more smooth and <br>organized for both sides. Now it, using the system, <br>broker and client could get to their aim - <br>get a mortgage - faster and easier.
+						</p>
+				</div>
+				<div class="img__block img__lines"></div>
+			</section>
+
+			<section class="content__section section__board section__board-right section__driven">
+				<div class="section__container section__container_img"></div>
+				<div class="section__container section__container_text">
+					<h3 class="section__title">Simplified the User Experience <br>for Templates Creation <br>and Communication</h3>
+					<p class="section__description">Our design team has collected all the inputs from the <br>industry experts and defined the key priority things <br>we need to improve the user experience. We’ve accented <br>our attention on templates for brokers and <br>quick communication between broker and client.</p>
+				</div>
+				<div class="img__block img__lines"></div>
+			</section>
+
+			<section class="content__section section__results">
+				<div class="showcase__title showcase__title-line">
+					<img src="./img/showcases/results.svg" alt="results">
+					<h2>Results</h2>
+					<div class="title__line"></div>
+				</div>
+				<div class="results__container">
+					<div class="results__block results__block-final">
+						<h3>Final Deliverables</h3>
+						<img src="./img/showcases/results__desk.svg" alt="icon">
+						<h4>3 Web-applications:</h4>
+						<div class="applic"><span>BrokerVision</span></div>
+						<div class="applic"><span>PresentationBuilder</span></div>
+						<div class="applic"><span>BrokerWizard</span></div>
+					</div>
+					<div class="results__block results__block-descr">
+						<p>BrokerEngine is our long-term partner and <br>the tools we are helping to deliver, help brokers <br>to optimize their working process, <br>make everything more organized.</p>
+						<p>With the help of BrokerEngine Apps, their <br>customers can increase their revenue decreasing <br>the working time up to</p>
+						<img src="./img/showcases/broker/price.svg" alt="price">
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer" id="includedFooter"></footer>
+		
+		<a href="#" class="scrollup"></span></a>
+		<script>
+			function sendEventEmailFirst() {
+				dataLayer.push({
+					'eventCategory': 'contact',
+					'eventAction': 'click', 
+					'eventLabel': 'email - Roman Leshchyk',
+					'event': 'autoEvent',
+				});
+			}
+			function sendEventEmailSecond() {
+				dataLayer.push({
+					'eventCategory': 'contact',
+					'eventAction': 'click', 
+					'eventLabel': 'email - Anton Korolyk',
+					'event': 'autoEvent',
+				});
+			}
+			function sendEventEmailThird() {
+				dataLayer.push({
+					'eventCategory': 'contact',
+					'eventAction': 'click', 
+					'eventLabel': 'email - Tony Vitali',
+					'event': 'autoEvent',
+				});
+			}
+		</script>
+	</body>
+	
+</html>

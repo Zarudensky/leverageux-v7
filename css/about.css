@@ -1,0 +1,260 @@
+.about__page .section__hero {
+  height: calc(648px - 210px);
+  padding-top: 210px;
+  background-image: url(../img/about/hero.png);
+}
+
+.section__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-bottom: 100px;
+}
+.section__about_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+  max-width: 1150px;
+  margin-bottom: 96px;
+}
+.about__container_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about__container_block:last-child {
+  margin-right: 35px;
+}
+.about__container_number {
+  position: relative;
+  font-family: 'Elephant';
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 135px;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #00A2B8;
+}
+.about__container_number:after {
+  position: absolute;
+  top: 11px;
+  right: -43px;
+  content: '+';
+  font-family: 'Elephant';
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #00A2B8;
+}
+.about__container_descr {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: left;
+  color: #6C6C6C;
+}
+.about__container_line {
+  width: 1px;
+  height: 72px;
+  background: #D8D8D8;
+}
+.about__container_fourth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.about__line {
+  display: block;
+  width: calc(50% - 46px);
+  height: 1px;
+  background: #D8D8D8;
+} 
+.about__ellipse {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #757575;
+  border-radius: 50%;
+  border: 16px solid #EBEBEB;
+}
+.section__team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.title__container {
+  font-family: 'EkibastuzBlack';
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #4A4A4A;
+  margin-bottom: 45px;
+}
+.team__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+  max-width: 1200px;
+}
+.persone__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  margin-bottom: 35px;
+}
+.persone_photo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 26px;
+}
+.persone__name {
+  white-space: nowrap;
+  font-family: 'EkibastuzBlack';
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #4A4A4A;
+}
+.persone__name:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #0195B6;
+  margin: 10px auto;
+}
+.persone__position {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #6C6C6C;
+}
+.br__for_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .about__page .section__hero {
+    height: calc(495px - 96px);
+    padding-top: 96px;
+  }
+  .about__page .hero__descr {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .persone_photo {
+    width: 100px;
+    height: auto;
+  }
+  .persone__name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .section__about_container {
+    flex-direction: column;
+    margin-bottom: 95px;
+  }
+  .about__container_block {
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .about__container_block:last-child {
+    margin: 0;
+  }
+  .about__container_number {
+    font-size: 76px;
+    line-height: 93px;
+  }
+  .about__container_number:after {
+    top: 0;
+    font-size: 36px;
+    right: -35px;
+  }
+  .about__container_descr {
+    text-align: center;
+  }
+  .about__container_line {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section__about {
+    margin-bottom: 40px;
+  }
+  .persone__block {
+    width: 50%;
+  }
+  .title__container {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .persone_1 {order: 1}
+  .persone_2 {order: 2}
+  .persone_3 {order: 3}
+  .persone_4 {order: 4}
+  .persone_5 {order: 5}
+  .persone_6 {order: 6}
+  .persone_7 {order: 7}
+  .persone_8 {order: 8}
+  .persone_9 {order: 9}
+  .persone_10 {order: 10}
+  .persone_11 {order: 11}
+  .persone_12 {order: 12}
+}
+@media screen and (max-width: 560px) {
+  .about__page .section__hero {
+    background-image: url(../img/about/hero_mob.png);
+    height: calc(395px - 96px);
+  }
+  .about__page .hero__lines {
+    background-image: url(../img/about/hero_lines_mob.svg);
+    background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -khtml-background-size: contain;
+  }
+  .section__team {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .br__for_mobile {
+    display: inline;
+  }
+  .persone__name {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 440px) {
+  .team__container {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 420px) {
+  .persone_3 .persone__position,
+  .persone_5 .persone__position {
+    height: 42px;
+  }
+}

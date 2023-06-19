@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#f9f9f9">
+		<meta name="description" content="Estimate">
+
+		<link rel="icon" href="favicon.ico" type="img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/estimate.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedFooter").load("footer.html"); 
+			});
+		</script>
+		<script src="js/main.js"></script>
+		<script src="js/estimate.js"></script>
+    
+		<title>Estimate</title>
+	</head>
+	<body class="estimate__page">
+		<header class="header animated">
+			<div class="header__container">
+			<div class="header__block header__block_logo">
+				<a class="header__logo animated" href="./">
+					Leverage
+					<span>
+						<svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.07903 0.400024H10.941V8.50002C10.941 10.084 10.509 11.26 9.64503 12.028C8.78103 12.796 7.55703 13.18 5.97303 13.18C4.20903 13.18 2.88303 12.802 1.99503 12.046C1.11903 11.29 0.68103 10.108 0.68103 8.50002V0.400024H3.88503V8.68003C3.88503 9.42403 4.06503 9.96402 4.42503 10.3C4.78503 10.636 5.33703 10.804 6.08103 10.804C6.81303 10.804 7.32903 10.642 7.62903 10.318C7.92903 9.99402 8.07903 9.44803 8.07903 8.68003V0.400024ZM16.8008 0.400024L19.1408 5.08002L21.4988 0.400024H25.045L21.4268 6.52002L25.045 13H21.1028L19.1408 7.61802L16.4048 13H12.8768L16.6748 6.52002L12.8768 0.400024H16.8008Z" fill="#FFD43D"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9261 0.300049H8.05962V6.42962H10.9261V0.300049ZM3.85902 6.42962V0.300049H0.650024V6.42962H3.85902Z" fill="#44BCFF"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1387 4.98737L16.7951 0.300049H12.8649L16.6689 6.42962H21.4283L25.052 0.300049H21.5004L19.1387 4.98737Z" fill="#44BCFF"/>
+						</svg>
+					</span>
+				</a>
+				<a id="btn_ep" href="./estimate.html" class="btn header__btn_ep">Estimate Project</a>
+				<div id="btn_om" class="header__btn_om">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+			<div class="header__block header__block_menu">
+    		<nav id="menu" class="header__menu">
+    			<div class="menu__btn_back">
+    				<svg class="btn__back" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+					</svg>
+    			</div>
+  				<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/port.svg" alt="portfolio">
+    				<a href="./portfolio.html">Portfolio</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/des.svg" alt="design">
+    				<a href="./design-process.html">Design Process</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/pric.svg" alt="pricing">
+    				<a href="./pricing.html">Pricing</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/about.svg" alt="about">
+    				<a href="./about.html">About</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_line"></div>
+    		</nav>
+  		</div>
+  		<div class="header__block header__block_btn">
+  			<a class="btn__back_home" href="./">
+    			<svg class="back__home_svg" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+					</svg>
+					<span class="back__home_txt">Back to Homepage</span>
+				</a>
+			</div>
+  		<div class="menu__back"></div>
+		</header>
+		<main class="content">
+			<div class="content__section section__hero">
+				<h1 class="hero__title">Get an estimate</h1>
+				<p class="hero__descr">Fill out this simple form. Our team will contact you promptly to discuss next steps.</p>
+				<div class="hero__lines"></div>
+			</div>
+				
+			<div class="estimate__container">
+				<div class="estimate__form">
+					<div class="estimate__form_block main__form">
+						<div class="main__form_block main__form__checkboxes main__block_first">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/1.svg" alt="1">
+								<p class="namber__block_txt">What is<br> the device of<br> your project?</p>
+							</div>
+							<div class="main__block_checkbox">
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/desktop.svg" alt="desktop">
+									<p class="checkbox__block_name">Desktop</p>
+									<input id="desktop" class="checkbox" type="checkbox" name="device" value="Desktop"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/mobile.svg" alt="mobile">
+									<p class="checkbox__block_name">Mobile</p>
+									<input id="mobile" class="checkbox" type="checkbox" name="device" value="Mobile"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/other.svg" alt="other">
+									<p class="checkbox__block_name">Other</p>
+									<input id="other" class="checkbox" type="checkbox" name="device" value="Other"/>
+									<span class="checkbox__check"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="main__form_block main__form__checkboxes main__block_second">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/2.svg" alt="2">
+								<p class="namber__block_txt">What is<br>the scope of<br>your project?</p>
+							</div>
+							<div class="main__block_checkbox">
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/design.svg" alt="design">
+									<p class="checkbox__block_name">Design</p>
+									<input id="design" class="checkbox" type="checkbox" name="scope" value="Design"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/frontend.svg" alt="frontend">
+									<p class="checkbox__block_name">Front-End</p>
+									<input id="frontEnd" class="checkbox" type="checkbox" name="scope" value="Front-End"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/backend.svg" alt="other">
+									<p class="checkbox__block_name">Back-End</p>
+									<input id="backEnd" class="checkbox" type="checkbox" name="scope" value="Back-End"/>
+									<span class="checkbox__check"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="main__form_block main__form__inputs main__block_third">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/3.svg" alt="3">
+								<p class="namber__block_txt">Fill the form<br>and get an<br>estimate</p>
+							</div>
+							<div class="main__block_inputs">
+								<input class="main__input main__input-name validation focus" id="firstName" name="firstName" type="text" placeholder="First Name"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-name">please enter first name</span>
+								</div>
+								<input class="main__input main__input-sername validation focus" id="lastName" name="lastName" type="text" placeholder="Last Name"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-sername">please enter last name</span>
+								</div>
+								<input class="main__input main__input-email validation focus" id="email" name="email" type="email" placeholder="Email">
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-email">please enter email</span>
+									<span class="valid__text valid__text-email_correct">please enter the correct email</span>
+								</div>
+								<input class="main__input main__input-phone validation focus" id="phone" name="phone" type="tel" placeholder="Phone Number"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-phone">please enter phone number</span>
+									<span class="valid__text valid__text-phone_correct">please enter the correct phone number</span>
+								</div>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-all">please fill these fields</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="estimate__form_block secondary__form">
+						<p class="secondary__form_mailink">Need NDA first? E-mail us at <a href="mailto:hello@leverageux.com">hello@Leverageux.com</a></p>
+						<textarea id="descrEstimate" name="description" class="secondary__form_text validation focus" placeholder="Short Description Of Your Idea"></textarea>
+						<div class="validation__text validation__text-description"><img src="./img/estimate/invalid.svg" alt="invalid">please fill Description field</div>
+						<p class="secondary__form_description">LeverageUX is committed to processing the above information in order to contact you and talk about your project. Other information is used for statistical purposes and, from time to time, we would like to contact you about our other products and services, as well as other content that may be of interest to you. If you consent to contact you for this purposes, please tick below:</p>
+						<div class="secondary__form_radio">
+							<label class="radio__block" id="project">
+								<input class="secondary__radio" type="checkbox" name="checkbox" value="project">
+								<span class="radio__check radio__check-project"></span>
+								<p class="secondary__radio_name agree__project">I agree to talk about my project with LeverageUX.</p>
+							</label>
+							<label class="radio__block" id="communications">
+								<input class="secondary__radio" type="checkbox" name="checkbox" value="communications">
+								<span class="radio__check radio__check-communications"></span>
+								<p class="secondary__radio_name agree__communications">I agree to receive other communications from LeverageUX.</p>
+							</label>
+							<div class="validation__text validation__text-radio"><img src="./img/estimate/invalid.svg" alt="invalid">please choose an agreement type</div>
+						</div>
+
+						<p class="secondary__form_description">You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices please view our Privacy Policy.</p>
+						<button class="btn btn__estimate" id="formBtnEstimate">Estimate Project</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" id="includedFooter"></footer>
+		
+		<a href="#" class="scrollup"></span></a>
+	</body>
+	
+</html>
