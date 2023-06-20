@@ -24,11 +24,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script> 
 			$(function(){
-				$("#includedHeader").load("header.html");
-			  $("#includedFooter").load("footer.html"); 
+					$("#includedHeader").load("header.html");
+					$("#includedFooter").load("footer.html", function() {
+							$.getScript("js/main.js");
+					});
 			});
 		</script>
-		<script src="js/main.js"></script>
 		<script src="js/pricing.js"></script>
 		<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
 		<script src="js/events.js"></script>

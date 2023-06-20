@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: /waites-showcase.html
 Disallow: /broker-showcase.html
+Disallow: /pricing.html
+Disallow: /pricing

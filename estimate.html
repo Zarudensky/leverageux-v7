@@ -16,17 +16,18 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script> 
 			$(function(){
-				$("#includedHeader").load("header.html");
-			  $("#includedFooter").load("footer.html"); 
+					$("#includedHeader").load("header.html");
+					$("#includedFooter").load("footer.html", function() {
+							$.getScript("js/main.js");
+					});
 			});
 		</script>
-		<script src="js/main.js"></script>
 		<script src="js/estimate.js"></script>
     
 		<title>Estimate</title>
 	</head>
 	<body class="estimate__page">
-		
+
 		<header class="header animated" id="includedHeader"></header>
 
 		<main class="content">

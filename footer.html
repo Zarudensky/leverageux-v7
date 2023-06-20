@@ -1,52 +1,75 @@
 <div class="lines__block footer__lines"></div>
-<div class="footer__block footer__block_title">
-    <h3 class="footer__title">Ready to discuss your project?</h3>
-</div>
-<div class="footer__block footer__block_feedback">
-    <div class="feedback feedback__founders">
-        <div class="founder founder__first">
-            <p class="founder__location">EU, Australia</p>
-            <img class="founder__photo" src="./img/about/photo_1.png" alt="photo_1">
-            <p class="founder__name">Roman Leshchyk</p>
-            <p class="founder__position">Founder, CEO</p>
-            <a class="founder__email" onclick="sendEventEmailFirst()" id="email_fr_1" href="mailto:roman@leverageux.com">Roman@leverageux.com </a>
-            <a class="founder__calendar" id="calendar_fr_1" href="https://calendly.com/leverageux-agency/intro" target=_blank>Schedule a call</a>
+
+<div class="footer__block footer__block_contacts">
+    <div class="contacts">
+        <h3 class="contacts__title desctop">Ready to discuss your project?</h3>
+        <div class="contacts__block email">
+            <img class="icon" src="./img/email-icon.svg" alt="email">
+            <div class="contact">
+                <p class="label">Drop us a line</p>
+                <a class="link" id="emailHello" href="mailto:hello@leverageux.com">hello@leverageux.com</a>
+                <span class="copy__btn" id="emailCopy"><img src="./img/copy-icon.svg" alt="copy"></span>
+                <p class="copy__message" id="copyMessage">Email copied to clipboard!</p>
+            </div>
         </div>
-        <div class="founder founder__second">
-            <p class="founder__location">USA, EU</p>
-            <img class="founder__photo" src="./img/photo_2.png" alt="photo_2">
-            <p class="founder__name">Antony Korolyk</p>
-            <p class="founder__position">Co-Founder, CBDO</p>
-            <a class="founder__email" onclick="sendEventEmailSecond()" id="email_fr_2" href="mailto:anton@leverageux.com">Anton@leverageux.com</a>
-            <a class="founder__calendar" id="calendar_fr_2" href="https://calendly.com/leverageux/intro" target=_blank>Schedule a call</a>
-        </div>
-		<div class="founder founder__third">
-            <p class="founder__location">USA</p>
-            <img class="founder__photo" src="./img/about/photo_3.png" alt="photo_3">
-            <p class="founder__name">Tony Vitali</p>
-            <p class="founder__position">Co-Founder, Design Director</p>
-            <a class="founder__email" onclick="sendEventEmailThird()" id="email_fr_3" href="mailto:tony@leverageux.com">Tony@leverageux.com</a>
-            <a class="founder__calendar" id="calendar_fr_2" href="https://calendly.com/leverageux-team/intro-website-us-team" target=_blank>Schedule a call</a>
+        <div class="contacts__block call">
+            <img class="icon" src="./img/call-icon.svg" alt="call">
+            <div class="contact">
+                <p class="label">Let’s chat</p>
+                <a class="link" id="calendar" href="https://calendly.com/leverageux-team/intro-website" target=_blank>Schedule a call</a>
+            </div>
         </div>
     </div>
+    <div class="feedback__form">
+        <div class="form__container">
+            <input type="text" class="validation validation__footer-form feedback__form-input" id="nameFooter" name="name" placeholder="Name">
+            <input type="email" class="validation validation__footer-form validation__footer-email feedback__form-input" id="emailFooter" name="email" placeholder="Email">
+            <textarea class="validation validation__footer-form validation__textarea feedback__form-descr" id="descrFooter" name="message" placeholder="Your message"></textarea>
+            <div class="validation__text validation__text-footer">
+                <img src="./img/estimate/invalid.svg" alt="invalid">
+                <span class="valid__text valid__text-all_forms">please fill these fields</span>
+            </div>
+            <button class="btn btn__feedback" id="formBtnFooter">Send</button>
+        </div>
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close">
+                    <svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                        <path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+                        l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+                    </svg>
+                </span>
+                <div class="feedback__message-send">Thanks, your letter sent.</div>
+                <div class="feedback__message-notsend">Sorry, your letter not sent.</div>
+            </div>
+            <div class="modal__back"></div>
+        </div>
+    </div>
+    <h3 class="contacts__title mobile">Ready to discuss your project?</h3>
 </div>
-<div class="footer__block footer__block_contacts">
+
+<div class="footer__block footer__block_addresses">
     <div class="footer__block_logo">
         <div class="footer__line footer__line_left"></div>
-        <a class="footer__logo" href="./">Leverage<span>UX</span></a>
+        <a class="footer__logo logo" href="./">
+            <img class="logo__name" src="./img/logo-1.svg" alt="Leverage">
+            <span>
+                <img src="./img/logo-2.svg" alt="UX">
+            </span>
+        </a>
         <div class="footer__line footer__line_right"></div>
     </div>
-    <div class="footer__contacts">
-        <div class="contacts__block">
+    <div class="footer__addresses">
+        <div class="addresses__block">
             <p>3530 Fir Drive,<br>Santa Rosa, CA, USA</p>
         </div>
-        <div class="contacts__block">
+        <div class="addresses__block">
             <p>Sepapaja 6,<br>Tallinn, Estonia</p>
         </div>
-        <div class="contacts__block">
+        <div class="addresses__block">
             <p>Tronador 3430,<br>Buenos Aires, Argentina</p>
         </div>
-        <div class="contacts__block">
+        <div class="addresses__block">
             <div id="clutch" class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50" data-clutchcompany-id="1396899">
                 <svg class="cw__svg" xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" viewBox="0 0 19.5 22"><path fill="#fff" d="M15.2 15.6c-1.1 1-2.6 1.6-4.2 1.6-3.6 0-6.2-2.6-6.2-6.2S7.4 4.9 11 4.9c1.6 0 3.1.5 4.2 1.5l.8.7 3.4-3.4-.9-.8C16.6 1 13.9 0 11 0 4.6 0 0 4.6 0 10.9 0 17.2 4.7 22 11 22c2.9 0 5.6-1 7.6-2.9l.8-.8-3.4-3.4-.8.7z"/><circle fill="#ff3d2e" cx="10.8" cy="11" r="3.7"/></svg>
             </div>
