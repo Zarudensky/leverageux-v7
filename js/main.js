@@ -284,6 +284,6 @@ document.querySelectorAll('.scroll__to__form').forEach(function(button) {
 	button.addEventListener('click', function() {
 			const content = document.querySelector('.footer__block_contacts');
 			const contentPosition = content.getBoundingClientRect().top + window.pageYOffset;
-			window.scrollTo({ top: contentPosition - 100, behavior: 'smooth' });
+			window.scrollTo({ top: contentPosition - 100 });
 	});
 });
