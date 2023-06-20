@@ -274,12 +274,16 @@ $(document).ready(function(){
 // copied to clipboard email
 document.querySelector('#emailCopy').addEventListener('click', () => {
 	navigator.clipboard.writeText('hello@leverageux.com')
-	.then(() => {
-			let message = document.getElementById('copyMessage');
-			message.style.display = "block";
-			setTimeout(() => message.style.display = "none", 2000);
-	})
 	.catch(err => {
 			console.log('Failed to copy email to clipboard', err);
+	});
+});
+
+// scrolled to form
+document.querySelectorAll('.scroll__to__form').forEach(function(button) {
+	button.addEventListener('click', function() {
+			const content = document.querySelector('.footer__block_contacts');
+			const contentPosition = content.getBoundingClientRect().top + window.pageYOffset;
+			window.scrollTo({ top: contentPosition - 100, behavior: 'smooth' });
 	});
 });

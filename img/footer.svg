@@ -1,14 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="1437px" height="908.953px" viewBox="0 36.203 1437 908.953" enable-background="new 0 36.203 1437 908.953"
-	 xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1093.7444" y1="1348.3956" x2="26.5613" y2="32.5123" gradientTransform="matrix(1 0 0 1 0.21 -333.1224)">
-	<stop  offset="0" style="stop-color:#3D0F46"/>
-	<stop  offset="1" style="stop-color:#056277"/>
+<svg width="1440" height="1078" viewBox="0 0 1440 1078" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1250_526)">
+<rect width="1440" height="1078" fill="white"/>
+<g clip-path="url(#clip1_1250_526)">
+<g filter="url(#filter0_d_1250_526)">
+<path d="M1755.97 1140H-316V140C-316 140 -193.999 20.6256 -10.0308 66.3542C16.7715 73.0164 56.1676 83.0917 111.949 97.9477C241.957 132.572 271.958 -121.915 475.97 116.991C571.645 229.03 682.047 -200.99 887.993 126.513C1093.94 454.015 1062 77.1733 1246.01 116.991C1291.44 126.822 1435.97 198 1557.97 198C1667.61 198 1755.97 146 1755.97 146V1140Z" fill="url(#paint0_linear_1250_526)"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1250_526" x="-324" y="1" width="2087.97" height="1155" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0431373 0 0 0 0 0.0862745 0 0 0 0 0.117647 0 0 0 0.21 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1250_526"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1250_526" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1250_526" x1="1162.94" y1="1034.22" x2="-120.983" y2="-311.04" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3D0047"/>
+<stop offset="1" stop-color="#006176"/>
 </linearGradient>
-<path fill="url(#SVGID_1_)" d="M1437.624,945.156H-0.464v-863.2c0,0,40.946,7.345,170.774,36.726
-	c129.827,29.381,159.788-186.57,363.517,16.16c95.543,95.073,205.793-269.829,411.454,8.08
-	c205.66,277.909,173.764-41.868,357.53-8.08c183.755,33.788,134.813,33.788,134.813,33.788V945.156z"/>
+<clipPath id="clip0_1250_526">
+<rect width="1440" height="1078" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1250_526">
+<rect width="2048" height="1077" fill="white" transform="translate(-304 1)"/>
+</clipPath>
+</defs>
 </svg>

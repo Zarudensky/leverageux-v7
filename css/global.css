@@ -108,8 +108,7 @@ a {
 .btn {
   justify-content: center;
   align-items: center;
-  font-family: 'Ekibastuz';
-  font-weight: 900;
+  font-family: 'EkibastuzBlack';
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.12em;
@@ -138,8 +137,6 @@ a {
 }
 .header__btn_ep {
   display: inline-flex;
-  font-family: 'Ekibastuz';
-  font-weight: 900;
   width: 230px;
   height: 32px;
   background: transparent;
@@ -251,7 +248,7 @@ a {
 .header__menu_link.active a {
   color: #00A2B8;
   font-weight: normal;
-  font-family: EkibastuzBlack;
+  font-family: 'EkibastuzBlack';
 }
 .link__line {
   display: none;
@@ -663,7 +660,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 980px;
+  height: 1078px;
   background-image: url(../img/footer.svg);
   background-repeat: no-repeat;
   background-position: center 0;
@@ -748,22 +745,17 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-.contact .link:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .contact .copy__btn {
   display: inline-flex;
+  width: 13px;
   height: 16px;
   cursor: pointer;
+  background: url(../img/copy-icon.svg) no-repeat center;
 }
-.copy__message {
-  display: none;
-  position: absolute;
-  bottom: -25px;
-  right: 0;
-  font-size: 14px;
-  color: #7ac096;
+.contact .copy__btn:active {
+  background: url(../img/copy-icon-active.svg) no-repeat center;
 }
 .feedback__form {
   display: flex;
@@ -795,6 +787,7 @@ a {
 }
 .feedback__form-input::placeholder {
   color: #fff;
+  opacity: 0.8;
 }
 .feedback__form-descr {
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -815,6 +808,7 @@ a {
 }
 .feedback__form-descr::placeholder {
   color: #fff;
+  opacity: 0.8;
 }
 .btn__feedback {
   width: 100%;
@@ -1130,15 +1124,9 @@ textarea:focus {
   .hero__lines {
     height: 400px;
   }
-  .footer {
-    height: 925px;
-  }
 }
 
 @media screen and (max-width: 1445px) {
-  .footer {
-    height: 950px;
-  }
   .hero__lines {
     height: 360px;
   }
@@ -1150,9 +1138,6 @@ textarea:focus {
   }
   .section__board-left .section__container_text {
     margin-right: 15px;
-  }
-  .footer {
-    height: 890px;
   }
 }
 
