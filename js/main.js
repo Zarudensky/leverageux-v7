@@ -274,6 +274,11 @@ $(document).ready(function(){
 // copied to clipboard email
 document.querySelector('#emailCopy').addEventListener('click', () => {
 	navigator.clipboard.writeText('hello@leverageux.com')
+	.then(() => {
+		let message = document.getElementById('tooltipCopied');
+		message.style.display = "flex";
+		setTimeout(() => message.style.display = "none", 2000);
+	})
 	.catch(err => {
 			console.log('Failed to copy email to clipboard', err);
 	});

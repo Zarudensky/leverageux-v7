@@ -725,7 +725,6 @@ a {
   margin-right: 27px;
 }
 .contact {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -749,14 +748,57 @@ a {
   text-decoration: underline;
 }
 .contact .copy__btn {
+  position: relative;
   display: inline-flex;
   width: 13px;
   height: 16px;
   cursor: pointer;
   background: url(../img/copy-icon.svg) no-repeat center;
 }
-.contact .copy__btn:active {
-  background: url(../img/copy-icon-active.svg) no-repeat center;
+.copy__tooltip,
+.copied__tooltip {
+  display: none;
+  position: absolute;
+  bottom: 33px;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.40);
+}
+.copy__tooltip {
+  right: -36px;
+  background: #00A2B8;
+  z-index: 9;
+}
+.copied__tooltip {
+  right: -102px;
+  background: #38A169;
+  z-index: 10;
+}
+.copy__tooltip:after,
+.copied__tooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+}
+.copy__tooltip:after {
+  border-color: #00A2B8 transparent transparent transparent;
+}
+.copied__tooltip:after {
+  border-color: #38A169 transparent transparent transparent;
+}
+.tooltip__icon {
+  margin-right: 8px;
+}
+.contact .copy__btn:hover .copy__tooltip {
+  display: block;
 }
 .feedback__form {
   display: flex;
