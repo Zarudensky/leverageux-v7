@@ -797,6 +797,9 @@ a {
 .tooltip__icon {
   margin-right: 8px;
 }
+.tooltip__text {
+  margin-left: 16px;
+}
 .contact .copy__btn:hover .copy__tooltip {
   display: block;
 }
@@ -1010,22 +1013,33 @@ a {
 .modal-content {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: calc(90% - 80px);
-  max-width: 480px;
-  min-height: 344px;
-  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  width: calc(100% - 126px);
+  margin: 0 auto;
   z-index: 200;
-  background: #fff;
-  margin: 10% auto;
-  padding: 25px 40px;
+}
+.send__container {
+  display: flex;
+  align-items: center;
+}
+.feedback__message-send,
+.feedback__message-notsend {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  display: none;
+  color: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.40);
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+.feedback__message-send {
+  background: #38A169;
+}
+.feedback__message-notsend {
+  background: #EE4055;
 }
 .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 15px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select:    none;
@@ -1035,22 +1049,14 @@ a {
   -moz-appearance:    none;
   appearance:         none;
   -webkit-tap-highlight-color: transparent;
+  margin-left: 24px;
 }
 .close svg {
   display: block;
-  width: 15px;
-  height: 15px;
-  fill: #ababab;
-}
-.close:hover svg { 
-  fill: #00A2B8;
-}
-.close:active svg { 
-  fill: #4A4A4A;
-}
-.modal p {
-  font-size: 18px;
-  color: #fff;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  opacity: 0.5;
 }
 .form {
   display: flex;
@@ -1066,7 +1072,6 @@ a {
 .send__message,
 .notsend__message {
   display: none;
-  color: #666;
 }
 .send__message.active,
 .notsend__message.active {
@@ -1387,6 +1392,9 @@ textarea:focus {
   }
   .hero__descr br {
     display: none;
+  }
+  .modal-content {
+    width: calc(100% - 40px);
   }
 }
 

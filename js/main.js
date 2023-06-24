@@ -84,13 +84,7 @@ $(document).ready(function(){
 			setTimeout("$('.header__block_menu').removeClass('closed')", 400);
 		}
 	});
-
-	$('.close, .modal__back').click(function() {
-		$('#feedbackModal').hide();
-		$('.feedback__message-send').hide();
-		$('.feedback__message-notsend').hide();
-	});
-
+	
 	// send form footer and validation
 	function validation() {
 		let valid = true;
@@ -264,7 +258,8 @@ $(document).ready(function(){
 		// Sends the request	    
 		xhr.send(final_data)	
 	}
-	$('.close, .modal__back').click(function() {
+
+	$('.close').click(function() {
 		$('#feedbackModal').hide();
 		$('.feedback__message-send').hide();
 		$('.feedback__message-notsend').hide();
