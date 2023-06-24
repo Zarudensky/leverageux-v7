@@ -25,13 +25,19 @@
     </div>
     <div class="feedback__form">
         <div class="form__container">
-            <input type="text" class="validation validation__footer-form feedback__form-input" id="nameFooter" name="name" placeholder="Name">
-            <input type="email" class="validation validation__footer-form validation__footer-email feedback__form-input" id="emailFooter" name="email" placeholder="Email">
-            <textarea class="validation validation__footer-form validation__textarea feedback__form-descr" id="descrFooter" name="message" placeholder="Your message"></textarea>
-            <div class="validation__text validation__text-footer">
-                <img src="./img/estimate/invalid.svg" alt="invalid">
-                <span class="valid__text valid__text-all_forms">please fill these fields</span>
+            <div class="form__field">
+                <input type="text" class="validation validation__footer-form validation__footer-name feedback__form-input" id="nameFooter" name="name" placeholder="Name">
+                <div class="validation__text validation__text-name">
+                    <span class="valid__text valid__text-all_forms">Please enter Name</span>
+                </div>
             </div>
+            <div class="form__field">
+                <input type="email" class="validation validation__footer-form validation__footer-email feedback__form-input" id="emailFooter" name="email" placeholder="Email">
+                <div class="validation__text validation__text-email">
+                    <span class="valid__text valid__text-all_forms">Please enter correct email address</span>
+                </div>
+            </div>
+            <textarea class="feedback__form-descr" id="descrFooter" name="message" placeholder="Your message"></textarea>
             <button class="btn btn__feedback" id="formBtnFooter">Send</button>
         </div>
         <div id="feedbackModal" class="modal">

@@ -84,31 +84,35 @@ $(document).ready(function(){
 			setTimeout("$('.header__block_menu').removeClass('closed')", 400);
 		}
 	});
-	
+
 	// send form footer and validation
 	function validation() {
-		let valid = true;
-		$('.validation__footer-form').each(function() {
-			if(!$(this).val().length >= 1){
-				$(this).addClass('invalid');
-				validText();
-				valid = false;
-				var errorInput = $(this).attr('name');
-				var eventActionInput = 'validation error - ' + errorInput;
-				dataLayer.push({
-					'eventCategory': 'form',
-					'eventAction': eventActionInput,
-					'eventLabel': 'footer', 
-					'event': 'autoEvent',
-				});
-			}
-		});
-		if( !validEmail($('.validation__footer-email').val())) {
-			$('.validation__footer-email').addClass('invalid');
-			$('.validation__text-footer').addClass('active');
-			valid = false;
-		}
-		return valid;
+    let valid = true;
+    
+    let nameField = $('.validation__footer-name');
+    let emailField = $('.validation__footer-email');
+    
+    // Validate the name
+    if(!$(nameField).val()) {
+        $(nameField).addClass('invalid');
+        $('.validation__text-name').addClass('active');
+        valid = false;
+    } else {
+        $(nameField).removeClass('invalid');
+        $('.validation__text-name').removeClass('active');
+    }
+    
+    // Validate the email
+    if(!validEmail($(emailField).val())) {
+        $(emailField).addClass('invalid');
+        $('.validation__text-email').addClass('active');
+        valid = false;
+    } else {
+        $(emailField).removeClass('invalid');
+        $('.validation__text-email').removeClass('active');
+    }
+    
+    return valid;
 	}
 	function validEmail(email) {
 		var regexEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -191,7 +195,6 @@ $(document).ready(function(){
 		xhr.onreadystatechange = function() {
 			$('#nameFooter').val('');
 			$('#emailFooter').val('');
-			$('#descrFooter').val('');
 			$('.validation__text').removeClass('active');
 
 			if(xhr.readyState == 4 && xhr.status == 200) { 
