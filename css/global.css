@@ -74,9 +74,13 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+.logo img {
+  height: 100%;
+}
 .logo span {
   display: inline-flex;
   transition: all 0.8s ease;
+  height: 100%;
 }
 .logo:hover span {
   transition: all 0.8s ease;
@@ -1151,7 +1155,6 @@ textarea:focus {
   font-weight: bold;
   font-size: 14px;
   line-height: 14px;
-  text-transform: capitalize;
   color: #F76659;
   white-space: nowrap;
 }
@@ -1703,6 +1706,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 460px) {
+  .logo {
+    height: 14px;
+  }
   .header__btn_ep {
     display: none;
   }

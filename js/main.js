@@ -138,6 +138,14 @@ $(document).ready(function(){
 			sendForm()
 		}
 	});
+	$('#nameFooter').focus(function() {
+    $('.validation__text-name').removeClass('active');
+    $(this).removeClass('invalid');
+	});
+	$('#emailFooter').focus(function() {
+    $('.validation__text-email').removeClass('active');
+    $(this).removeClass('invalid');
+	});
 
 	function sendForm() {
 		var firstname = $('#nameFooter').val();

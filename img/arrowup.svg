@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="40px" height="40px" viewBox="12.778 -4.672 40 40" enable-background="new 12.778 -4.672 40 40" xml:space="preserve">
-<path fill="#00A2B8" d="M52.778,15.328c0,11.046-8.954,20-20,20s-20-8.954-20-20s8.954-20,20-20S52.778,4.282,52.778,15.328z
-	 M32.779,15.329l5.09,5.09c0.938,0.938,2.457,0.938,3.394,0l0,0c0.938-0.938,0.938-2.457,0-3.394l-6.788-6.788l0,0
-	c-0.938-0.938-2.457-0.938-3.394,0l-6.788,6.788c-0.938,0.938-0.938,2.457,0,3.394l0,0c0.938,0.938,2.457,0.938,3.394,0
-	C27.687,20.419,32.778,15.328,32.779,15.329z"/>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1252_60)">
+<circle cx="20" cy="20" r="20" fill="white"/>
+<path d="M40 20C40 31.046 31.046 40 20 40C8.954 40 0 31.046 0 20C0 8.954 8.954 0 20 0C31.046 0 40 8.954 40 20ZM20.001 20.001L25.091 25.091C26.029 26.029 27.548 26.029 28.485 25.091C29.423 24.153 29.423 22.634 28.485 21.697L21.697 14.909C20.759 13.971 19.24 13.971 18.303 14.909L11.515 21.697C10.577 22.635 10.577 24.154 11.515 25.091C12.453 26.029 13.972 26.029 14.909 25.091L20.001 20.001Z" fill="#00A2B8"/>
+</g>
+<defs>
+<clipPath id="clip0_1252_60">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
 </svg>
