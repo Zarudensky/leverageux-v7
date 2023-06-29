@@ -563,7 +563,7 @@ a {
   font-size: 36px;
   line-height: 40px;
   color: #00A2B8;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .section__board-right .section__title {
   text-align: right;
@@ -600,7 +600,11 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #696969;
-  margin-top: 15px;
+  margin-top: 18px;
+}
+.section__description b {
+  font-family: 'EkibastuzBlack';
+  font-weight: 400;
 }
 .section__board-right .section__description {
   text-align: right;
@@ -615,6 +619,34 @@ a {
   max-width: 365px;
   margin-left: auto;
 }
+.description__icons {
+  display: flex;
+  align-items: center;
+}
+.section__board-right .description__icons {
+  justify-content: flex-end;
+}
+.section__board-left .description__icons {
+  justify-content: flex-start;
+}
+.section__board-right .description__icons img {
+  margin-left: 20px;
+}
+.section__board-left .description__icons img {
+  margin-right: 20px;
+}
+.section__price {
+  background: linear-gradient(to top, #955774, #EC6880);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  font-family: 'EkibastuzBlack';
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  margin-top: 25px;
+}
+
 .section__btn {
   display: inline-flex;
   justify-content: center;
@@ -1789,9 +1821,7 @@ textarea:focus {
     left: 0;
     right: calc(50% + 340px);
   }
-
   .section__board {
-    margin: 100px 0;
     overflow: unset;
   }
   .section__board-right .section__container_text {

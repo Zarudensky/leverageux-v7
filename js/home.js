@@ -1,28 +1,37 @@
 $(document).ready(function(){
-	// animated section
 	$(window).scroll(function() {
 		var scrollWindow = $(window).scrollTop() + $(window).height();
 		// animated section idea
 		var sectionIdea = $('.idea__img_lamp').offset().top + $('.idea__img_lamp').height();
 	 	if(scrollWindow > sectionIdea){
-	        $('.section__idea').addClass('animated');
+	    $('.section__idea').addClass('animated');
 		}
-		// animated section real
-		var sectionReal = $('.section__real').offset().top - 100;
+		// animated section investment
+		var sectionReal = $('.investment').offset().top - 100;
 		if(scrollWindow > sectionReal){
-	        $('.section__real').addClass('animated');
+	    $('.investment').addClass('animated');
 		}
-		// animated section real
-		var sectionCrypt = $('.section__crypt').offset().top - 100;
+		// animated section marketing
+		var sectionCrypt = $('.marketing').offset().top - 100;
 		if(scrollWindow > sectionCrypt){
-	        $('.section__crypt').addClass('animated');
+	    $('.marketing').addClass('animated');
 		}
-		// animated section real
-		var sectionMoney = $('.section__money').offset().top - 100;
-		if(scrollWindow > sectionMoney){
-	        $('.section__money').addClass('animated');
+		// animated section analytics
+		var sectionReal = $('.analytics').offset().top - 100;
+		if(scrollWindow > sectionReal){
+	    $('.analytics').addClass('animated');
 		}
-    });
+		// animated section drone
+		var sectionReal = $('.drone').offset().top - 100;
+		if(scrollWindow > sectionReal){
+	    $('.drone').addClass('animated');
+		}
+		// animated section crm
+		var sectionReal = $('.crm').offset().top - 100;
+		if(scrollWindow > sectionReal){
+	    $('.crm').addClass('animated');
+		}
+	});
 
     // animated block to scroll
 	$(window).scroll(function() {
