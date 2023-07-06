@@ -734,9 +734,6 @@
 .analytics .img__gradient {
   background-image: url(../img/home/analytics-gradient.svg);
 }
-.analytics .icon__1 {
-  display: none;
-}
 .drone .img__board {
   background-image: url(../img/home/drone-board.png);
 }
@@ -1404,7 +1401,7 @@
     margin: 16px;
   }
   .analytics .icon__1 {
-    display: inline;
+    width: 84px;
   }
   .analytics .icon__2 {
     width: 96px;
