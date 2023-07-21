@@ -156,7 +156,7 @@ $(document).ready(function(){
 		var feedbackMessageSend = $('.feedback__message-send');
 		var feedbackMessageNotSend = $('.feedback__message-notsend');
 
-		var leadStatus = 'Interest';
+		var leadStatus = '';
 		var contactType = 'Prospect';
 		var source = 'Website';
 		var leadGeneration = 'Inbound';
