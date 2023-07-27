@@ -203,6 +203,7 @@ $(document).ready(function(){
 		xhr.onreadystatechange = function() {
 			$('#nameFooter').val('');
 			$('#emailFooter').val('');
+			$('#descrFooter').val('');
 			$('.validation__text').removeClass('active');
 
 			if(xhr.readyState == 4 && xhr.status == 200) { 
